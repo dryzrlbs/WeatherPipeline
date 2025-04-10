@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: weather_data
+    database: "{{ target.database }}"  # Dinamik olarak bağlanılacak veritabanı (PostgreSQL veya BigQuery)
+    # PostgreSQL için schema kullanılır, BigQuery için dataset. postgre ..schema :"{{ 'public' }}"  
+    dataset: "{{ 'weather_dataset' }}"  
+    tables:
+      - name: weather_data  # Tablo adı her iki ortamda da aynı

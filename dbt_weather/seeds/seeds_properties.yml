@@ -1,0 +1,9 @@
+version: 2
+seeds: 
+  - name: weather_codes_lookup
+    description: >
+      weather codes lookup is a seed file that contains a mapping of weather codes to their descriptions.
+    config:
+      column_types:
+        code: integer
+        description: string

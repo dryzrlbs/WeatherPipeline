@@ -1,0 +1,39 @@
+# Kestra configuration file
+
+# Veritabanı yapılandırması
+datasources:
+  h2:
+    # H2 veritabanı URL'si
+    url: jdbc:h2:mem:kestra;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    username: sa
+    password: sa
+
+# Depolama yapılandırması
+kestra:
+  # Repository türü
+  repository:
+    type: h2  # H2 veritabanı kullanılacak
+
+  # Depolama türü
+  storage:
+    type: local  # Yerel depolama
+    local:
+      basePath: "/app/storage"  # Depolama dizini, Docker konteyneri içinde
+
+  # Sıra türü (Queue)
+  queue:
+    type: memory  # Bellek içi kuyruk kullanılıyor
+
+  # Görev türleri
+  tasks:
+    tmpDir:
+      path: /tmp/kestra-wd/tmp  # Geçici dosyaların tutulacağı dizin
+
+  # Web sunucu yapılandırması
+  server:
+    basicAuth:
+      enabled: false  # Temel kimlik doğrulaması devre dışı
+      username: "admin@localhost.dev"
+      password: kestra  # Web arabirimi için yönetici şifresi
+    url: http://localhost:8080/  # Web arayüzüne erişim URL'si

@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: staging_dev
+    database: "{{ env_var('POSTGRES_DB', 'WeatherHelsinki') }}"  # Dev için PostgreSQL bağlantısı
+    tables:
+      - name: weather_data
+
+  - name: staging_prod
+    database: "{{ env_var('BIGQUERY_DB', 'weather_dataset') }}"  # Prod için BigQuery bağlantısı
+    tables:
+      - name: weather_data

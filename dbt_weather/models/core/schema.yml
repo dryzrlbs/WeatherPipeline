@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: dim_weather_codes
+    description: >
+      List of weather codes
+     
+  - name: dm_monthly_weather
+    description: >
+      Aggregated table of all weather types AVG or SUM
+     
+         
+  - name: fact_weather_data
+    description: >
+      Each record uniquely identified by date (hourly). 
+   
