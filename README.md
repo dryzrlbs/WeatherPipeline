@@ -43,6 +43,7 @@ Main weather parameters used in this project:
 | wind_direction_10m       | Wind direction at 10 meters              |
 | weather_code             | Encoded weather condition classification |
 | pressure_msl             | Mean sea level pressure                  |
+
 The data retrieved enables in-depth temporal analysis of Helsinki's climate, supporting hourly, daily, and seasonal trend exploration.
 
 
