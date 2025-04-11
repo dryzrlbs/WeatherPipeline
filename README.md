@@ -193,7 +193,7 @@ Kestra enabled a modular and maintainable orchestration layer, seamlessly integr
 
 
 ### **3.6 Data Visualization**
-Dashboard Link: https://lookerstudio.google.com/s/uzDSENUM_W0
+Dashboard Link: https://lookerstudio.google.com/s/ugphW89xbmc
 To present the processed weather data in an insightful and interactive format, a dashboard was built using Looker Studio (formerly Google Data Studio).
 
 Dashboard Highlights:
