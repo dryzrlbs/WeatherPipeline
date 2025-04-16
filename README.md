@@ -105,7 +105,7 @@ The setup includes:
 ### **3.4 Data Transformation with dbt**
 Once the weather data is collected and cleaned, we use dbt (data build tool) to further organize and enhance it. dbt helps us manage our data models in a structured, version-controlled way. It allows us to write transformation logic using SQL and then turns that logic into views or tables in our data warehouse.
 <p align="center">
-  <img width="35%" src="images/dbt_bigquery_prod.png" alt="Weather Project Architecture Overview">
+  <img width="50%" src="images/dbt_bigquery_prod.png" alt="Weather Project Architecture Overview">
 </p>
 
 Here’s how dbt is used in the project:
