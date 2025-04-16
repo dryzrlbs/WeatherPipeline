@@ -255,7 +255,7 @@ terraform init       # Initializes the working directory
 terraform plan       # Shows the execution plan
 terraform apply      # Applies the changes and creates the infrastructure
  ```
-### Step4. Download batch data for fist time setup
+### Step4. Download batch data for the first time setup
  - Data time intervar 10 years -(today()-2) day data from "Open-Meteo API" 
  ```bash
  python weather_ingest_forbigquery.py     
