@@ -3,11 +3,6 @@
     <strong>Data Engineering Zoomcamp Project: Helsinki Weather Analysis</strong>
 </h1>
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 899ed4c5625780d62059b0d4bccf209cbbdda568
 <p align="center">
 <a href="https://open-meteo.com/">Open Meteo</a> •
 <a href="https://open-meteo.com/en/docs">API Docs</a> 
