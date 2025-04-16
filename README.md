@@ -4,11 +4,6 @@
 </h1>
 
 <p align="center">
-Master the fundamentals of data engineering by building an end-to-end data pipeline from scratch. Gain hands-on experience with industry-standard tools and best practices.
-</p>
-
-
-<p align="center">
 <a href="https://open-meteo.com/">Open Meteo</a> •
 <a href="https://open-meteo.com/en/docs">API Docs</a> 
 </p>
@@ -209,9 +204,12 @@ Dashboard Highlights:
 The dashboard provides a clear and concise overview of historical weather conditions in Helsinki, supporting data-driven insights and easy interpretation.
 
 <p align="center">
-  <img width="100%" src="images/looker-dashboard.png" alt="Dashboard Overview">
+  <img width="100%" src="images/dashboard1.png" alt="Dashboard Overview">
 </p>
 
+<p align="center">
+  <img width="100%" src="images/dashboard2.png" alt="Dashboard Overview">
+</p>
 
 
 ## **4. Project Prerequisites**
@@ -274,7 +272,6 @@ terraform apply      # Applies the changes and creates the infrastructure
 
 ## **6. Future Works**
 - Add dimensional modeling, date grain transformations, and weather code mappings for improved insight generation.
-- Enable long-term analysis of temperature, precipitation, and humidity to detect patterns linked to climate change.
 - Investigate temporal trends of specific weather events (e.g., storms, snowfall) to understand their frequency and seasonality.
 - Implement more detailed data quality checks to dbt tests
 - Expand usage of dbt docs, tags, and model descriptions for better maintainability.
