@@ -142,6 +142,10 @@ Together, these dbt models help turn raw weather data into clean, meaningful, an
 <p align="center">
   <img width="50%" src="images/bigquery_tables.png" alt="Weather Project Architecture Overview">
 </p>
+<p align="center">
+  <img width="50%" src="images/dbt_model.png" alt="Dashboard Overview">
+</p>
+
 
 #### Profile.yml Configuration
 To manage multiple environments in dbt, we separate our development and production configurations using the profiles.yml file. This allows us to easily switch between different platforms for development and production work.
@@ -209,13 +213,13 @@ Dashboard Highlights:
 
 - Date Range Filter: Enables users to select a custom time range for analysis.
 
-- Time Series Charts: Visualize trends in average temperature, rainfall, and snowfall over time.
+- Time Series Charts: Visualize trends in min-max temperature, average rainfall, and snowfall over time.
 
 - Extreme Value Indicators: Display maximum and minimum values for temperature.
 
 - Scorecards: Show average humidity levels for the selected date range.
 
-The dashboard provides a clear and concise overview of historical weather conditions in Helsinki, supporting data-driven insights and easy interpretation.
+The dashboard provides a clear and concise overview of historical (monthly and yearly) weather conditions in Helsinki, supporting data-driven insights and easy interpretation.
 
 <p align="center">
   <img width="100%" src="images/dboard1.png" alt="Dashboard Overview">
