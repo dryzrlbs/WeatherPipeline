@@ -12,6 +12,8 @@ with weather_data as
 
 
   where temperature_2m is not null 
+    and temperature_2m between -50 and 50
+    and date>='2015-01-01'
 )
 
 SELECT
@@ -25,6 +27,7 @@ SELECT
     relative_humidity_2m AS humidity,
     precipitation
 FROM weather_data
+where rn=1
 
 
 

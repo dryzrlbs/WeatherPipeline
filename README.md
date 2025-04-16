@@ -120,6 +120,13 @@ Data Aggregation: We summarize the data — such as calculating total rainfall o
 #### **Structure of dbt Models**
 Staging Layer (stg_weather_data)
 This is where we prepare and clean the raw data. It’s like a first pass to standardize and filter the information.
+```sql
+  ...
+  where temperature_2m is not null 
+    and temperature_2m between -50 and 50
+    and date>='2015-01-01'
+  ...
+```
 
 Core Models (fact_weather_data and dim_weather_codes)
 These models combine data from the staging layer and lookup tables. They provide a structured and enriched version of the data, ready for use in dashboards or further analytics.
@@ -130,7 +137,11 @@ This model creates a monthly view of key metrics like total rain, total snowfall
 Seed Data (weather_codes_lookup.csv)
 A small, static reference file is loaded into the data warehouse. It helps explain what each weather code stands for (e.g., 1 = Sunny, 3 = Rainy).
 
-Together, these dbt models help turn raw weather data into clean, meaningful, and analysis-ready information — all while being easy to manage and update over time.
+Together, these dbt models help turn raw weather data into clean, meaningful, and analysis-ready information, all while being easy to manage and update over time.
+
+<p align="center">
+  <img width="50%" src="images/bigquery_tables.png" alt="Weather Project Architecture Overview">
+</p>
 
 #### Profile.yml Configuration
 To manage multiple environments in dbt, we separate our development and production configurations using the profiles.yml file. This allows us to easily switch between different platforms for development and production work.
@@ -207,11 +218,11 @@ Dashboard Highlights:
 The dashboard provides a clear and concise overview of historical weather conditions in Helsinki, supporting data-driven insights and easy interpretation.
 
 <p align="center">
-  <img width="100%" src="images/dashboard1.png" alt="Dashboard Overview">
+  <img width="100%" src="images/dboard1.png" alt="Dashboard Overview">
 </p>
 
 <p align="center">
-  <img width="100%" src="images/dashboard2.png" alt="Dashboard Overview">
+  <img width="100%" src="images/dboard2.png" alt="Dashboard Overview">
 </p>
 
 
