@@ -103,7 +103,7 @@ The setup includes:
 - variables.tf: Stores configurable inputs such as project ID, dataset name, and region.
 
 ### **3.4 Data Transformation with dbt**
-Once the weather data is collected and cleaned, we use dbt (data build tool) to further organize and enhance it. dbt helps us manage our data models in a structured, version-controlled way. It allows us to write transformation logic using SQL and then turns that logic into views or tables in our data warehouse.
+Once the weather data is collected and cleaned, we use dbt (data build tool) to further organize and enhance it. dbt helps us manage our data models in a structured, version-controlled way. It allows us to write transformation logic using SQL and then turns that logic into views or tables in our BigQuery data warehouse.
 <p align="center">
   <img width="50%" src="images/dbt_bigquery_prod.png" alt="Weather Project Architecture Overview">
 </p>
@@ -140,10 +140,10 @@ A small, static reference file is loaded into the data warehouse. It helps expla
 Together, these dbt models help turn raw weather data into clean, meaningful, and analysis-ready information, all while being easy to manage and update over time.
 
 <p align="center">
-  <img width="50%" src="images/bigquery_tables.png" alt="Weather Project Architecture Overview">
+  <img width="60%" src="images/bigquery_tables.png" alt="Weather Project Architecture Overview">
 </p>
 <p align="center">
-  <img width="50%" src="images/dbt_model.png" alt="Dashboard Overview">
+  <img width="80%" src="images/dbt_model.png" alt="Dashboard Overview">
 </p>
 
 
