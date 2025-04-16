@@ -3,9 +3,6 @@
     <strong>Data Engineering Zoomcamp Project: Helsinki Weather Analysis</strong>
 </h1>
 
-<p align="center">
-Master the fundamentals of data engineering by building an end-to-end data pipeline from scratch. Gain hands-on experience with industry-standard tools and best practices.
-</p>
 
 
 <p align="center">
